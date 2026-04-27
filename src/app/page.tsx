@@ -12,7 +12,7 @@ import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaA
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardThirteen from '@/components/sections/testimonial/TestimonialCardThirteen';
-import { Clock, Pizza, Smile, Phone, Mail, Calendar } from "lucide-react";
+import { Clock, Pizza, Smile, Phone, Mail, Calendar, Truck, ShoppingBag } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -32,49 +32,40 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleCentered
       navItems={[
-        {
-          name: "Home",          id: "hero"},
-        {
-          name: "About",          id: "about"},
-        {
-          name: "Speisekarte",          id: "products"},
-        {
-          name: "Kontakt",          id: "contact"},
+        { name: "Home", id: "hero" },
+        { name: "Über uns", id: "about" },
+        { name: "Speisekarte", id: "products" },
+        { name: "Kontakt", id: "contact" },
       ]}
-      brandName="Grün & Stark"
+      brandName="Pizzeria Brijani"
     />
   </div>
 
   <div id="hero" data-section="hero">
       <HeroLogo
-      logoText="Grün & Stark"
-      description="Ihr zuverlässiger Partner für Gartenbau, Landschaftsgestaltung und professionelle Grünflächenpflege. Qualität, die man sieht."
+      logoText="Pizzeria Brijani"
+      description="Authentische italienische Pizza direkt aus dem Holzofen. Genießen Sie echte Qualität in Helmstedt."
       buttons={[
-        {
-          text: "Unsere Leistungen",          href: "#products"},
-        {
-          text: "Jetzt Anfragen",          href: "#contact"},
+        { text: "Speisekarte ansehen", href: "#products" },
+        { text: "Jetzt bestellen", href: "#contact" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/gardener-working-green-park_23-2148815159.jpg"
-      imageAlt="Professioneller Gartenbau und Landschaftsgestaltung"
+      imageSrc="https://img.b2bpic.net/free-photo/fresh-pizza-with-mushrooms-herbs_114579-2475.jpg"
+      imageAlt="Pizzeria Brijani Holzofen Pizza"
     />
   </div>
 
   <div id="about" data-section="about">
       <MetricSplitMediaAbout
       useInvertedBackground={false}
-      title="Experten für Ihr Grün"
-      description="Mit jahrelanger Erfahrung transformieren wir Gärten in persönliche Oasen. Wir stehen für nachhaltige Pflege und präzise Handwerkskunst."
+      title="Tradition & Geschmack"
+      description="Seit Jahren verwöhnen wir Helmstedt mit frischen Zutaten und Leidenschaft für authentische Pizza. Besuchen Sie uns in der Freiherr-vom-Stein-Straße 24."
       metrics={[
-        {
-          value: "10+ Jahre",          title: "Erfahrung"},
-        {
-          value: "500+",          title: "Projekte"},
-        {
-          value: "98%",          title: "Zufriedenheitsrate"},
+        { value: "Authentisch", title: "Holzofen" },
+        { value: "Frisch", title: "Zutaten" },
+        { value: "Schnell", title: "Lieferung" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/landscaping-worker-planting-flowers-park_23-2148792045.jpg"
-      imageAlt="Gartenbauexperten bei der Arbeit"
+      imageSrc="https://img.b2bpic.net/free-photo/chef-preparing-pizza_114579-2815.jpg"
+      imageAlt="Pizzeria Brijani Küche"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
     />
@@ -87,52 +78,27 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       useInvertedBackground={true}
       products={[
-        {
-          id: "p1",          name: "Gartengestaltung",          price: "Individuell",          variant: "Neuanlagen",          imageSrc: "http://img.b2bpic.net/free-photo/landscaper-working-with-tools-garden_23-2148792067.jpg"},
-        {
-          id: "p2",          name: "Rasenpflege",          price: "Ab 50 €",          variant: "Wöchentlich",          imageSrc: "http://img.b2bpic.net/free-photo/close-up-lawn-mower-grass_23-2148906511.jpg"},
-        {
-          id: "p3",          name: "Baumpflege",          price: "Auf Anfrage",          variant: "Profi",          imageSrc: "http://img.b2bpic.net/free-photo/tree-pruning-process-garden_23-2148820123.jpg"},
+        { id: "p1", name: "Margherita", price: "8,50 €", variant: "Klassisch", imageSrc: "https://img.b2bpic.net/free-photo/pizza-margherita_114579-2917.jpg" },
+        { id: "p2", name: "Salami Spezial", price: "10,50 €", variant: "Würzige Salami", imageSrc: "https://img.b2bpic.net/free-photo/pepperoni-pizza_114579-2819.jpg" },
+        { id: "p3", name: "Funghi", price: "9,50 €", variant: "Frische Pilze", imageSrc: "https://img.b2bpic.net/free-photo/pizza-mushrooms_114579-2821.jpg" },
       ]}
-      title="Unsere Leistungen"
-      description="Wir bieten professionelle Lösungen für alle Ihre gärtnerischen Anforderungen."
+      title="Unsere Auswahl"
+      description="Eine Vielfalt an Pizzen, die jeden Geschmack treffen."
     />
   </div>
 
   <div id="features" data-section="features">
       <FeatureCardTwentyOne
       useInvertedBackground={false}
-      title="Qualität & Zuverlässigkeit"
-      description="Warum Sie auf uns setzen sollten."
+      title="Service & Angebote"
+      description="Wir bieten mehr als nur Pizza."
       accordionItems={[
-        {
-          id: "a1",          title: "Nachhaltigkeit",          content: "Wir verwenden umweltfreundliche Pflegemethoden für Ihren Garten."},
-        {
-          id: "a2",          title: "Fachwissen",          content: "Unser Team besteht aus ausgebildeten Experten für Gartenbau."},
-        {
-          id: "a3",          title: "Pünktlichkeit",          content: "Termintreue ist bei uns selbstverständlich."},
+        { id: "a1", title: "Lieferung & Abholung", content: "Genießen Sie unsere Pizza bequem zu Hause oder holen Sie sie direkt bei uns ab." },
+        { id: "a2", title: "Frische Zutaten", content: "Wir verwenden ausschließlich hochwertige Produkte für den besten Geschmack." },
+        { id: "a3", title: "Öffnungszeiten", content: "Wir sind täglich für Sie da, um Ihre Hunger zu stillen." },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/professional-gardener-trimming-hedges_23-2148815132.jpg"
+      imageSrc="https://img.b2bpic.net/free-photo/delivery-scooter-city_114579-2830.jpg"
       mediaAnimation="blur-reveal"
-    />
-  </div>
-
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardThirteen
-      animationType="slide-up"
-      textboxLayout="split"
-      useInvertedBackground={true}
-      testimonials={[
-        {
-          id: "t1",          name: "Familie Schmidt",          handle: "@kunden",          testimonial: "Unser Garten sieht dank Grün & Stark endlich so aus, wie wir es uns immer gewünscht haben.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/happy-family-in-garden_23-2148792080.jpg"},
-        {
-          id: "t2",          name: "Hausverwaltung M.",          handle: "@gewerbe",          testimonial: "Sehr zuverlässige Pflege unserer Grünflächen über das ganze Jahr hinweg.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/business-people-meeting-outdoors_23-2148906663.jpg"},
-      ]}
-      showRating={true}
-      title="Was unsere Kunden sagen"
-      description="Zufriedene Gartenbesitzer und gewerbliche Partner."
     />
   </div>
 
@@ -142,81 +108,39 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       metrics={[
-        {
-          id: "m1",          icon: Smile,
-          title: "Zufriedene Kunden",          value: "500+"},
-        {
-          id: "m2",          icon: Clock,
-          title: "Stunden Pflege",          value: "5.000+"},
-        {
-          id: "m3",          icon: Pizza,
-          title: "Bäume gepflanzt",          value: "1.200"},
+        { id: "m1", icon: Truck, title: "Schnelle Lieferung", value: "Blitzschnell" },
+        { id: "m2", icon: ShoppingBag, title: "Takeaway", value: "Jederzeit" },
+        { id: "m3", icon: Clock, title: "Täglich geöffnet", value: "Mo-So" },
       ]}
-      title="Erfolgsgeschichten"
-      description="Werte, die unser Engagement unterstreichen."
-    />
-  </div>
-
-  <div id="faq" data-section="faq">
-      <FaqBase
-      textboxLayout="default"
-      useInvertedBackground={true}
-      faqs={[
-        {
-          id: "f1",          title: "Bieten Sie auch regelmäßige Pflege an?",          content: "Ja, wir bieten maßgeschneiderte Wartungsverträge für Ihren Garten an."},
-        {
-          id: "f2",          title: "Kommen Sie für eine Vorbesichtigung?",          content: "Selbstverständlich, wir besprechen Ihr Projekt gerne vor Ort."},
-      ]}
-      title="Häufige Fragen"
-      description="Kurz und knapp für Sie beantwortet."
-      faqsAnimation="slide-up"
+      title="Warum Brijani?"
+      description="Ihr Partner für den schnellen Genuss in Helmstedt."
     />
   </div>
 
   <div id="contact" data-section="contact">
       <ContactSplitForm
       useInvertedBackground={false}
-      title="Kontaktieren Sie uns"
-      description="Wir freuen uns auf Ihre Nachricht."
+      title="Jetzt bestellen!"
+      description="Rufen Sie uns unter 0163 7275488 an oder senden Sie uns eine Nachricht."
       inputs={[
-        {
-          name: "name",          type: "text",          placeholder: "Name",          required: true,
-        },
-        {
-          name: "email",          type: "email",          placeholder: "E-Mail",          required: true,
-        },
+        { name: "name", type: "text", placeholder: "Ihr Name", required: true },
+        { name: "tel", type: "tel", placeholder: "Telefonnummer", required: true },
       ]}
-      textarea={{
-        name: "message",        placeholder: "Ihre Anfrage",        rows: 4,
-      }}
-      imageSrc="http://img.b2bpic.net/free-photo/gardener-standing-in-front-of-green-garden_23-2148792055.jpg"
-      imageAlt="Kontakt zu Grün & Stark"
+      textarea={{ name: "message", placeholder: "Ihre Bestellung oder Nachricht", rows: 4 }}
+      imageSrc="https://img.b2bpic.net/free-photo/close-up-pizza-box-delivery_114579-2832.jpg"
+      imageAlt="Kontakt Pizzeria Brijani"
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterBaseCard
-      logoText="Grün & Stark"
+      logoText="Pizzeria Brijani"
       columns={[
-        {
-          title: "Leistungen",          items: [
-            { label: "Gartengestaltung", href: "#products" },
-            { label: "Rasenpflege", href: "#products" },
-          ],
-        },
-        {
-          title: "Kontakt",          items: [
-            { label: "0176 63393642", href: "tel:017663393642" },
-            { label: "service@grünundstark.de", href: "mailto:service@grünundstark.de" },
-          ],
-        },
-        {
-          title: "Öffnungszeiten",          items: [
-            { label: "Mo-Sa: 08:00-18:00", href: "#" },
-          ],
-        },
+        { title: "Informationen", items: [{ label: "Freiherr-vom-Stein-Straße 24, 38350 Helmstedt", href: "#" }] },
+        { title: "Kontakt", items: [{ label: "0163 7275488", href: "tel:01637275488" }] },
+        { title: "Services", items: [{ label: "Lieferung", href: "#" }, { label: "Abholung", href: "#" }] },
       ]}
-      copyrightText="© 2025 Grün & Stark"
+      copyrightText="© 2025 Pizzeria Brijani"
     />
   </div>
       </ReactLenis>
